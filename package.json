@@ -1,0 +1,22 @@
+{
+  "name": "cv-portfolio",
+  "version": "1.0.0",
+  "description": "A personal portfolio showcasing skills, experience, and projects.",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server .",
+    "build": "echo 'Build script not defined'",
+    "test": "echo 'Test script not defined'"
+  },
+  "keywords": [
+    "portfolio",
+    "web development",
+    "personal website"
+  ],
+  "author": "Parveen Kumar",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
