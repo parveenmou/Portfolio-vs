@@ -1,0 +1,55 @@
+╔══════════════════════════════════════════════════════════════════╗
+║        PORTFOLIO UPDATE PROTOCOL - MOVING FORWARD                ║
+║                                                                  ║
+║  Every single change will follow this exact checklist:           ║
+╚══════════════════════════════════════════════════════════════════╝
+
+📋 BEFORE MAKING ANY CHANGES:
+  ✓ Confirm what needs to be changed
+  ✓ Identify which files need edits
+  ✓ Plan the implementation
+
+🔧 MAKING THE CHANGE:
+  ✓ Edit the appropriate file (HTML, CSS, or JS)
+  ✓ Include 3-5 lines of context for clarity
+  ✓ Make targeted, specific replacements
+
+✅ VERIFY FILE CONTENT:
+  ✓ Read the file section to confirm changes are present
+  ✓ Search for key phrases/classes to verify updates
+  ✓ Check for any syntax errors
+
+📡 CHECK LIVE SERVER:
+  ✓ Get terminal output from live-server
+  ✓ Look for "Change detected [filename]" message
+  ✓ Confirm "Ready for changes" status
+  ✓ Verify no error messages
+
+🌐 TEST IN BROWSER:
+  ✓ Open Simple Browser to http://127.0.0.1:8080
+  ✓ Perform Ctrl+Shift+R (hard refresh)
+  ✓ Visually verify the changes are displayed
+  ✓ Take screenshots if needed
+
+📢 REPORT RESULTS:
+  ✓ Clearly state what was changed
+  ✓ Show what it looks like now
+  ✓ Provide hard refresh instructions: "Press Ctrl+Shift+R"
+  ✓ If cache issue: provide clear cache clearing steps
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔴 CRITICAL REMINDERS:
+  • ALWAYS open browser after changes
+  • ALWAYS do Ctrl+Shift+R to verify
+  • ALWAYS report exactly what you see
+  • NEVER assume changes are live without testing
+  • Always include hard refresh instructions
+
+📍 LIVE SERVER STATUS:
+  URL: http://127.0.0.1:8080
+  Status: ✅ RUNNING
+  Monitoring: ✅ ACTIVE
+  Browser: ✅ READY FOR TESTING
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

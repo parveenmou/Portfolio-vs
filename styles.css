@@ -1,0 +1,292 @@
+/* Custom Animations and Styles */
+/* Updated: Added typewriter section animations */
+
+/* Floating Card Animations */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes float-delay {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Typewriter animations */
+@keyframes typewriter {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    0%, 49% {
+        border-right-color: rgb(250, 204, 21);
+    }
+    50%, 100% {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    10%, 90% {
+        opacity: 1;
+    }
+}
+
+/* Flowing Light Stream Animations */
+@keyframes flowStream1 {
+    0%, 100% {
+        transform: translateX(-50px) translateY(0);
+        opacity: 0.4;
+    }
+    50% {
+        transform: translateX(20px) translateY(-10px);
+        opacity: 0.8;
+    }
+}
+
+@keyframes flowStream2 {
+    0%, 100% {
+        transform: translateX(50px) translateY(10px);
+        opacity: 0.3;
+    }
+    50% {
+        transform: translateX(-20px) translateY(0);
+        opacity: 0.7;
+    }
+}
+
+@keyframes flowStream3 {
+    0%, 100% {
+        transform: translateY(20px) scaleX(1);
+        opacity: 0.3;
+    }
+    50% {
+        transform: translateY(-10px) scaleX(1.1);
+        opacity: 0.6;
+    }
+}
+
+.floating-card {
+    animation: float 3s ease-in-out infinite;
+}
+
+.floating-card-delay {
+    animation: float-delay 3s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation styling */
+#navbar {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(107, 114, 128, 0.2);
+}
+
+#navbar.scrolled {
+    background: rgba(0, 0, 0, 0.95);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile menu toggle */
+#mobile-menu.active {
+    display: flex !important;
+}
+
+/* Portfolio filter buttons */
+.filter-btn.active {
+    background-color: rgb(250, 204, 21);
+    color: black;
+}
+
+.filter-btn:not(.active) {
+    cursor: pointer;
+}
+
+.filter-btn:not(.active):hover {
+    background-color: rgba(250, 204, 21, 0.1);
+    color: white;
+}
+
+/* Portfolio item animations */
+.portfolio-item {
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.portfolio-item.hidden-item {
+    display: none;
+    opacity: 0;
+}
+
+/* Smooth transitions for portfolio */
+.portfolio-grid {
+    transition: all 0.3s ease;
+}
+
+/* Enhanced hover effects */
+a.group:hover {
+    transform: translateY(-2px);
+}
+
+/* Icon initialization for Lucide */
+[data-lucide] {
+    width: 24px;
+    height: 24px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(250, 204, 21);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(253, 224, 71);
+}
+
+/* Link animations */
+a {
+    text-decoration: none;
+}
+
+/* Button animations */
+button {
+    cursor: pointer;
+}
+
+/* Gradient text animation */
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Contact section styling */
+#contact {
+    background: linear-gradient(135deg, rgba(250, 204, 21, 0.05) 0%, rgba(107, 114, 128, 0.05) 100%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .text-5xl {
+        font-size: 2.5rem;
+    }
+
+    .text-7xl {
+        font-size: 2.5rem;
+    }
+
+    .gap-12 {
+        gap: 2rem;
+    }
+}
+
+/* Ensure Lucide icons load properly */
+svg[data-lucide] {
+    stroke-width: 2;
+}
+
+/* Loading animation */
+@keyframes pulse-border {
+    0%, 100% {
+        border-color: rgba(147, 51, 234, 0.2);
+    }
+    50% {
+        border-color: rgba(147, 51, 234, 0.5);
+    }
+}
+
+/* Active states */
+a[href="#home"],
+a[href="#services"],
+a[href="#work"],
+a[href="#process"],
+a[href="#contact"] {
+    position: relative;
+}
+
+a[href="#home"]::after,
+a[href="#services"]::after,
+a[href="#work"]::after,
+a[href="#process"]::after,
+a[href="#contact"]::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #fcd34d, #facc15);
+    transition: width 0.3s ease;
+}
+
+a[href="#home"]:hover::after,
+a[href="#services"]:hover::after,
+a[href="#work"]:hover::after,
+a[href="#process"]:hover::after,
+a[href="#contact"]:hover::after {
+    width: 100%;
+}
+
+/* Ensure proper display of portfolio items */
+#portfolio-grid {
+    display: grid;
+}
+
+#portfolio-grid .portfolio-item {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#portfolio-grid .portfolio-item.hidden-item {
+    pointer-events: none;
+}
+
+/* Typewriter Section Styling */
+#typewriter {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(31, 41, 55, 0.3) 100%);
+}
+
+.typewriter-text {
+    display: inline-block;
+    white-space: normal;
+    word-wrap: break-word;
+    line-height: 1.2;
+    text-align: left;
+    min-height: 80px;
+    font-size: inherit;
+}

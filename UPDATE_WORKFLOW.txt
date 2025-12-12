@@ -1,0 +1,40 @@
+╔══════════════════════════════════════════════════════════════════╗
+║           PORTFOLIO UPDATE WORKFLOW & VERIFICATION               ║
+╚══════════════════════════════════════════════════════════════════╝
+
+For every change made to your portfolio:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+STEP 1: MAKE THE CHANGE
+  ✓ Edit the HTML, CSS, or JavaScript files
+  ✓ Save all changes
+
+STEP 2: VERIFY FILE CONTENT
+  ✓ Read the file to confirm changes are present
+  ✓ Search for key phrases to verify updates
+
+STEP 3: CHECK LIVE SERVER
+  ✓ Verify server is running: http://127.0.0.1:8080
+  ✓ Monitor terminal output for "Change detected"
+  ✓ Ensure no errors in server logs
+
+STEP 4: TEST IN BROWSER
+  ✓ Open Simple Browser to http://127.0.0.1:8080
+  ✓ Take screenshot or verify visually
+  ✓ Check that changes are displayed
+
+STEP 5: PROVIDE CLEAR INSTRUCTIONS
+  If changes don't show immediately:
+  ✓ Clear browser cache (Ctrl + Shift + Delete)
+  ✓ Do hard refresh (Ctrl + Shift + R)
+  ✓ Close and reopen browser if needed
+  ✓ Try incognito/private mode for testing
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LIVE SERVER: http://127.0.0.1:8080
+STATUS: ✅ Running and monitoring for changes
+BROWSER: Ctrl + Shift + R to see updates
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
