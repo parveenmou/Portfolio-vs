@@ -9,7 +9,7 @@
     <!-- Tailwind CSS (No installation needed) -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Link to Custom CSS -->
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 
     <!-- Lucide Icons CDN -->
@@ -203,57 +203,125 @@
 
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Service 1: Website Creation -->
-                <div class="bg-black border border-gray-700 p-8 rounded-2xl hover:border-yellow-400/50 transition-all group hover:-translate-y-2">
-                    <div class="mb-6 flex gap-3">
-                        <div class="p-3 bg-gray-900 rounded-lg group-hover:bg-gray-800 transition-colors">
-                            <img src="src/assets/Logo/shopify.png" alt="Shopify" class="w-6 h-6 object-contain">
+                <div class="bg-gradient-to-br from-black via-black to-gray-900/30 border border-gray-700 p-8 rounded-2xl hover:border-yellow-400 transition-all group hover:-translate-y-2 hover:shadow-2xl hover:shadow-yellow-400/10 relative overflow-hidden flex flex-col">
+                    <!-- Premium accent line -->
+                    <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-yellow-400 via-yellow-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    
+                    <div class="mb-8">
+                        <div class="inline-block px-3 py-1 bg-yellow-400/10 border border-yellow-400/20 rounded-full mb-4">
+                            <p class="text-xs font-semibold text-yellow-400 tracking-wider">WEB DEVELOPMENT</p>
                         </div>
-                        <div class="p-3 bg-gray-900 rounded-lg group-hover:bg-gray-800 transition-colors">
-                            <img src="src/assets/Logo/wordpress.png" alt="WordPress" class="w-6 h-6 object-contain">
-                        </div>
-                        <div class="p-3 bg-gray-900 rounded-lg group-hover:bg-gray-800 transition-colors">
-                            <img src="src/assets/Logo/vs code.jpeg" alt="VS Code" class="w-6 h-6 object-contain">
+                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-3 leading-tight">Premium Web Experiences</h3>
+                        <p class="text-gray-400 leading-relaxed mb-6">High-performance, conversion-optimized websites built with modern technologies. SEO-ready, mobile-first, and designed to drive results.</p>
+                    </div>
+
+                    <div class="mb-8">
+                        <p class="text-xs text-gray-500 uppercase tracking-wider font-semibold mb-3">Tech Stack</p>
+                        <div class="flex gap-2 flex-wrap mb-6">
+                            <span class="inline-block px-3 py-1 bg-gray-800/50 border border-gray-700 rounded-lg text-xs text-gray-300">React</span>
+                            <span class="inline-block px-3 py-1 bg-gray-800/50 border border-gray-700 rounded-lg text-xs text-gray-300">Webflow</span>
+                            <span class="inline-block px-3 py-1 bg-gray-800/50 border border-gray-700 rounded-lg text-xs text-gray-300">Shopify</span>
+                            <span class="inline-block px-3 py-1 bg-gray-800/50 border border-gray-700 rounded-lg text-xs text-gray-300">WordPress</span>
                         </div>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-4">Website Creation From Scratch</h3>
-                    <p class="text-gray-400 mb-6 leading-relaxed">Custom, responsive websites built with React, Webflow, WordPress, and Shopify. Optimized for conversions.</p>
-                    <p class="text-xs text-gray-500">Shopify • WordPress • VS Code</p>
+
+                    <div class="mt-auto">
+                        <p class="text-xs text-gray-500 uppercase tracking-wider font-semibold mb-3">Powered By</p>
+                        <div class="flex gap-3">
+                            <div class="icon-container p-3 bg-gray-800/50 border border-gray-700 rounded-lg">
+                                <img src="src/assets/Logo/shopify.jpg" alt="Shopify" class="w-6 h-6 object-contain" title="Shopify">
+                            </div>
+                            <div class="icon-container p-3 bg-gray-800/50 border border-gray-700 rounded-lg">
+                                <img src="src/assets/Logo/wordpress.jpg" alt="WordPress" class="w-6 h-6 object-contain" title="WordPress">
+                            </div>
+                            <div class="icon-container p-3 bg-gray-800/50 border border-gray-700 rounded-lg">
+                                <img src="src/assets/Logo/react.png" alt="Webflow" class="w-6 h-6 object-contain" title="Webflow">
+                            </div>
+                            <div class="icon-container p-3 bg-gray-800/50 border border-gray-700 rounded-lg">
+                                <img src="src/assets/Logo/claude.jpg" alt="React" class="w-6 h-6 object-contain" title="React & Modern Dev">
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Service 2: Digital Advertisement -->
-                <div class="bg-black border border-gray-700 p-8 rounded-2xl hover:border-yellow-400/50 transition-all group hover:-translate-y-2">
-                    <div class="mb-6 flex gap-3">
-                        <div class="p-3 bg-gray-900 rounded-lg group-hover:bg-gray-800 transition-colors">
-                            <img src="src/assets/Logo/meta.png" alt="Meta" class="w-6 h-6 object-contain">
+                <div class="bg-gradient-to-br from-black via-black to-gray-900/30 border border-gray-700 p-8 rounded-2xl hover:border-yellow-400 transition-all group hover:-translate-y-2 hover:shadow-2xl hover:shadow-yellow-400/10 relative overflow-hidden flex flex-col">
+                    <!-- Premium accent line -->
+                    <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-yellow-400 via-yellow-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    
+                    <div class="mb-8">
+                        <div class="inline-block px-3 py-1 bg-yellow-400/10 border border-yellow-400/20 rounded-full mb-4">
+                            <p class="text-xs font-semibold text-yellow-400 tracking-wider">PERFORMANCE MARKETING</p>
                         </div>
-                        <div class="p-3 bg-gray-900 rounded-lg group-hover:bg-gray-800 transition-colors">
-                            <img src="src/assets/Logo/google ads.png" alt="Google Ads" class="w-6 h-6 object-contain">
-                        </div>
-                        <div class="p-3 bg-gray-900 rounded-lg group-hover:bg-gray-800 transition-colors">
-                            <img src="src/assets/Logo/youtube.png" alt="YouTube" class="w-6 h-6 object-contain">
+                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-3 leading-tight">High-ROAS Ad Scaling</h3>
+                        <p class="text-gray-400 leading-relaxed mb-6">Expert ad management across Meta, Google, and YouTube. Full-funnel strategy, creative optimization, and predictable ROAS growth for ambitious brands.</p>
+                    </div>
+
+                    <div class="mb-8">
+                        <p class="text-xs text-gray-500 uppercase tracking-wider font-semibold mb-3">Ad Platforms</p>
+                        <div class="flex gap-2 flex-wrap mb-6">
+                            <span class="inline-block px-3 py-1 bg-gray-800/50 border border-gray-700 rounded-lg text-xs text-gray-300">Meta Ads</span>
+                            <span class="inline-block px-3 py-1 bg-gray-800/50 border border-gray-700 rounded-lg text-xs text-gray-300">Google Ads</span>
+                            <span class="inline-block px-3 py-1 bg-gray-800/50 border border-gray-700 rounded-lg text-xs text-gray-300">YouTube Ads</span>
                         </div>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-4">Digital Advertisement Across Platforms</h3>
-                    <p class="text-gray-400 mb-6 leading-relaxed">Data-driven ad campaigns on Facebook, Google, and YouTube. Strategy, creative, and scaling for ROI.</p>
-                    <p class="text-xs text-gray-500">Meta • Google Ads • YouTube</p>
+
+                    <div class="mt-auto">
+                        <p class="text-xs text-gray-500 uppercase tracking-wider font-semibold mb-3">Expertise In</p>
+                        <div class="flex gap-3">
+                            <div class="icon-container p-3 bg-gray-800/50 border border-gray-700 rounded-lg">
+                                <img src="src/assets/Logo/meta.jpg" alt="Meta Ads" class="w-6 h-6 object-contain" title="Meta Ads">
+                            </div>
+                            <div class="icon-container p-3 bg-gray-800/50 border border-gray-700 rounded-lg">
+                                <img src="src/assets/Logo/google ads.jpg" alt="Google Ads" class="w-6 h-6 object-contain" title="Google Ads">
+                            </div>
+                            <div class="icon-container p-3 bg-gray-800/50 border border-gray-700 rounded-lg">
+                                <img src="src/assets/Logo/youtube.jpg" alt="YouTube Ads" class="w-6 h-6 object-contain" title="YouTube Ads">
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Service 3: AI Tech Solutions -->
-                <div class="bg-black border border-gray-700 p-8 rounded-2xl hover:border-yellow-400/50 transition-all group hover:-translate-y-2">
-                    <div class="mb-6 flex gap-3">
-                        <div class="p-3 bg-gray-900 rounded-lg group-hover:bg-gray-800 transition-colors">
-                            <img src="src/assets/Logo/clade.jpeg" alt="Claude" class="w-6 h-6 object-contain">
+                <div class="bg-gradient-to-br from-black via-black to-gray-900/30 border border-gray-700 p-8 rounded-2xl hover:border-yellow-400 transition-all group hover:-translate-y-2 hover:shadow-2xl hover:shadow-yellow-400/10 relative overflow-hidden flex flex-col">
+                    <!-- Premium accent line -->
+                    <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-yellow-400 via-yellow-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    
+                    <div class="mb-8">
+                        <div class="inline-block px-3 py-1 bg-yellow-400/10 border border-yellow-400/20 rounded-full mb-4">
+                            <p class="text-xs font-semibold text-yellow-400 tracking-wider">AI AUTOMATION</p>
                         </div>
-                        <div class="p-3 bg-gray-900 rounded-lg group-hover:bg-gray-800 transition-colors">
-                            <img src="src/assets/Logo/chat gpt.png" alt="ChatGPT" class="w-6 h-6 object-contain">
-                        </div>
-                        <div class="p-3 bg-gray-900 rounded-lg group-hover:bg-gray-800 transition-colors">
-                            <img src="src/assets/Logo/gemini.webp" alt="Gemini" class="w-6 h-6 object-contain">
+                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-3 leading-tight">Intelligent AI Agents & Automations</h3>
+                        <p class="text-gray-400 leading-relaxed mb-6">Custom AI agents, workflow automation, and intelligent chatbots powered by GPT, Claude, and Gemini. Build enterprise-grade AI solutions that drive real business outcomes.</p>
+                    </div>
+
+                    <div class="mb-8">
+                        <p class="text-xs text-gray-500 uppercase tracking-wider font-semibold mb-3">AI Models & Tools</p>
+                        <div class="flex gap-2 flex-wrap mb-6">
+                            <span class="inline-block px-3 py-1 bg-gray-800/50 border border-gray-700 rounded-lg text-xs text-gray-300">GPT</span>
+                            <span class="inline-block px-3 py-1 bg-gray-800/50 border border-gray-700 rounded-lg text-xs text-gray-300">Claude</span>
+                            <span class="inline-block px-3 py-1 bg-gray-800/50 border border-gray-700 rounded-lg text-xs text-gray-300">Gemini</span>
+                            <span class="inline-block px-3 py-1 bg-gray-800/50 border border-gray-700 rounded-lg text-xs text-gray-300">Bolt</span>
                         </div>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-4">Full AI Tech Solution</h3>
-                    <p class="text-gray-400 mb-6 leading-relaxed">AI-powered automation, chatbots, content generation, and intelligent workflows using latest AI models.</p>
-                    <p class="text-xs text-gray-500">Claude • ChatGPT • Gemini • Bolt</p>
+
+                    <div class="mt-auto">
+                        <p class="text-xs text-gray-500 uppercase tracking-wider font-semibold mb-3">Powered By</p>
+                        <div class="flex gap-3">
+                            <div class="icon-container p-3 bg-gray-800/50 border border-gray-700 rounded-lg">
+                                <img src="src/assets/Logo/claude.jpg" alt="Claude" class="w-6 h-6 object-contain" title="Claude">
+                            </div>
+                            <div class="icon-container p-3 bg-gray-800/50 border border-gray-700 rounded-lg">
+                                <img src="src/assets/Logo/gpt.jpg" alt="GPT" class="w-6 h-6 object-contain" title="GPT">
+                            </div>
+                            <div class="icon-container p-3 bg-gray-800/50 border border-gray-700 rounded-lg">
+                                <img src="src/assets/Logo/gemini.webp" alt="Gemini" class="w-6 h-6 object-contain" title="Gemini">
+                            </div>
+                            <div class="icon-container p-3 bg-gray-800/50 border border-gray-700 rounded-lg">
+                                <img src="src/assets/Logo/bolt.png" alt="Bolt" class="w-6 h-6 object-contain" title="Bolt">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
