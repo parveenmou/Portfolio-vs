@@ -596,8 +596,12 @@ a {
     transform: translateY(-4px);
 }
 
-iframe {
-    display: block;
+.project-box > div:first-child {
+    animation: slideInUp 0.6s ease-out;
+}
+
+.project-box > div:first-child i {
+    animation: float 3s ease-in-out infinite;
 }
 
 /* ========== MOBILE ANIMATED SERVICE CARDS ========== */
