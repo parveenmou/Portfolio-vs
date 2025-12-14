@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!-- Projects Page: Experience & Projects -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects & Experience | Mr. Mourya | Web and Tech</title>
+    
+    <!-- Tailwind CSS (No installation needed) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
+</head>
+<body class="bg-black text-gray-300 font-sans selection:bg-yellow-400 selection:text-black">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-6">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex flex-col">
+                <div class="text-xl sm:text-2xl font-bold tracking-tighter leading-tight">
+                    <span class="text-white">Mr. Mourya</span>
+                    <span class="text-cyan-400 ml-2">web and tech</span>
+                </div>
+                <p class="text-xs text-gray-500 mt-1">Mr. parveen Kumar Mourya</p>
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html#services" class="text-sm font-medium hover:text-yellow-400 transition-colors">Services</a>
+                <a href="index.html#portfolio" class="text-sm font-medium hover:text-yellow-400 transition-colors">Portfolio</a>
+                <a href="projects.html" class="text-sm font-medium text-yellow-400">Projects</a>
+                <a href="index.html#contact" class="text-sm font-medium hover:text-yellow-400 transition-colors">Contact</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-white">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black border-t border-gray-700 mt-4">
+            <div class="px-6 py-4 flex flex-col gap-4">
+                <a href="index.html" class="text-lg font-medium text-gray-300 hover:text-yellow-400">Home</a>
+                <a href="index.html#services" class="text-lg font-medium text-gray-300 hover:text-yellow-400">Services</a>
+                <a href="index.html#portfolio" class="text-lg font-medium text-gray-300 hover:text-yellow-400">Portfolio</a>
+                <a href="projects.html" class="text-lg font-medium text-yellow-400">Projects</a>
+                <a href="index.html#contact" class="text-lg font-medium text-gray-300 hover:text-yellow-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Hero Section -->
+    <section id="projects-hero" class="pt-40 pb-24 bg-black relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                    My Projects <span class="text-yellow-400">&</span> Experience
+                </h1>
+                <p class="text-gray-400 max-w-2xl mx-auto text-lg mb-8">
+                    A showcase of my work, achievements, and the projects that shaped my career in web development, digital marketing, and AI solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Content Section (Dummy) -->
+    <section id="projects-content" class="py-24 bg-gray-900/50">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <!-- Experience Section -->
+            <div class="mb-24">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-12">Experience</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-black border border-gray-700 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold text-white mb-4">Web Development</h3>
+                        <p class="text-gray-400 mb-4">Experience with React, Webflow, WordPress, and Shopify. Building responsive, conversion-optimized websites that deliver results.</p>
+                        <p class="text-sm text-gray-500">Years: 5+ | Projects: 50+</p>
+                    </div>
+                    <div class="bg-black border border-gray-700 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold text-white mb-4">Digital Marketing</h3>
+                        <p class="text-gray-400 mb-4">Expertise in Meta Ads, Google Ads, and YouTube advertising. Scaling brands with data-driven strategies and creative optimization.</p>
+                        <p class="text-sm text-gray-500">Years: 4+ | Campaigns: 300+</p>
+                    </div>
+                    <div class="bg-black border border-gray-700 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold text-white mb-4">AI Solutions</h3>
+                        <p class="text-gray-400 mb-4">Building intelligent AI agents, chatbots, and automation workflows using GPT, Claude, and Gemini models.</p>
+                        <p class="text-sm text-gray-500">Years: 2+ | Solutions: 20+</p>
+                    </div>
+                    <div class="bg-black border border-gray-700 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold text-white mb-4">Certifications</h3>
+                        <p class="text-gray-400 mb-4">Meta Certified Digital Marketer, Shopify Expert, and certified in multiple web development technologies.</p>
+                        <p class="text-sm text-gray-500">Status: Active | Count: 5+</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <div class="mb-24">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-12">Featured Projects</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-black border border-gray-700 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold text-white mb-4">Decor Bae</h3>
+                        <p class="text-gray-400 mb-4">An eCommerce store for premium home decor. Generated 22L+ in sales through strategic digital marketing and website optimization.</p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="inline-block px-3 py-1 bg-gray-800/50 border border-gray-700 rounded-lg text-xs text-gray-300">Shopify</span>
+                            <span class="inline-block px-3 py-1 bg-gray-800/50 border border-gray-700 rounded-lg text-xs text-gray-300">Meta Ads</span>
+                            <span class="inline-block px-3 py-1 bg-gray-800/50 border border-gray-700 rounded-lg text-xs text-gray-300">Growth</span>
+                        </div>
+                    </div>
+                    <div class="bg-black border border-gray-700 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold text-white mb-4">Balance Is The New Green</h3>
+                        <p class="text-gray-400 mb-4">A lifestyle brand website showcasing sustainable living. Built with Webflow and optimized for SEO.</p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="inline-block px-3 py-1 bg-gray-800/50 border border-gray-700 rounded-lg text-xs text-gray-300">Webflow</span>
+                            <span class="inline-block px-3 py-1 bg-gray-800/50 border border-gray-700 rounded-lg text-xs text-gray-300">SEO</span>
+                            <span class="inline-block px-3 py-1 bg-gray-800/50 border border-gray-700 rounded-lg text-xs text-gray-300">Design</span>
+                        </div>
+                    </div>
+                    <div class="bg-black border border-gray-700 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold text-white mb-4">Burger Bae & Urban Needs</h3>
+                        <p class="text-gray-400 mb-4">A food delivery and urban services platform. Created with React and integrated with multiple payment gateways.</p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="inline-block px-3 py-1 bg-gray-800/50 border border-gray-700 rounded-lg text-xs text-gray-300">React</span>
+                            <span class="inline-block px-3 py-1 bg-gray-800/50 border border-gray-700 rounded-lg text-xs text-gray-300">Backend</span>
+                            <span class="inline-block px-3 py-1 bg-gray-800/50 border border-gray-700 rounded-lg text-xs text-gray-300">APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="border-t border-gray-700 pt-24">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-12">By The Numbers</h2>
+                <div class="grid md:grid-cols-4 gap-8 text-center">
+                    <div class="bg-black border border-gray-700 p-8 rounded-2xl">
+                        <div class="text-4xl font-bold text-yellow-400 mb-2">22L+</div>
+                        <p class="text-gray-400">Sales Generated</p>
+                    </div>
+                    <div class="bg-black border border-gray-700 p-8 rounded-2xl">
+                        <div class="text-4xl font-bold text-yellow-400 mb-2">50+</div>
+                        <p class="text-gray-400">Websites Built</p>
+                    </div>
+                    <div class="bg-black border border-gray-700 p-8 rounded-2xl">
+                        <div class="text-4xl font-bold text-yellow-400 mb-2">300%</div>
+                        <p class="text-gray-400">Average ROI</p>
+                    </div>
+                    <div class="bg-black border border-gray-700 p-8 rounded-2xl">
+                        <div class="text-4xl font-bold text-yellow-400 mb-2">5+</div>
+                        <p class="text-gray-400">Years Experience</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Back to Home CTA -->
+    <section class="py-24 bg-black border-t border-gray-700">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-8">Ready to Work Together?</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg mb-8">
+                Let's discuss how I can help bring your vision to life.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html#contact" class="px-8 py-3 bg-yellow-400 text-black font-bold rounded-lg hover:bg-yellow-300 transition-all hover:shadow-lg hover:shadow-yellow-400/50">
+                    Get In Touch
+                </a>
+                <a href="index.html" class="px-8 py-3 bg-gray-900 border border-gray-700 text-white font-bold rounded-lg hover:border-yellow-400 transition-all hover:shadow-lg hover:shadow-yellow-400/20">
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 border-t border-gray-700 py-8">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-gray-500 text-sm">© 2025 Mr. Parveen Kumar Mourya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

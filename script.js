@@ -249,6 +249,50 @@ document.addEventListener('DOMContentLoaded', function() {
         subtree: true
     });
 
+    // ========== PROJECT TABS FUNCTIONALITY ==========
+    const projectTabs = document.querySelectorAll('.project-tab');
+    const projectContents = document.querySelectorAll('.project-content');
+
+    projectTabs.forEach(tab => {
+        tab.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Get the project identifier from data attribute
+            const projectId = this.getAttribute('data-project');
+            
+            // Remove active class from all tabs and contents
+            projectTabs.forEach(t => t.classList.remove('active'));
+            projectContents.forEach(content => content.classList.remove('active', 'hidden'));
+            
+            // Add active class to current tab and content
+            this.classList.add('active');
+            const activeContent = document.querySelector(`[data-project="${projectId}"]`);
+            if (activeContent) {
+                activeContent.classList.add('active');
+                activeContent.classList.remove('hidden');
+            }
+        });
+    });
+
+    // ========== SCROLL ANIMATIONS FOR SERVICE CARDS ==========
+    const scrollAnimateElements = document.querySelectorAll('.scroll-animate');
+    
+    const scrollObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                scrollObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
+    });
+    
+    scrollAnimateElements.forEach(element => {
+        scrollObserver.observe(element);
+    });
+
     console.log('Portfolio script loaded successfully');
 
 });
