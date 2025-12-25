@@ -718,6 +718,34 @@ section#experience {
     .container {
         padding: 25px 10px;
     }
+
+    /* Mobile image height - Fit to image natural height */
+    .project-box > div.aspect-video {
+        aspect-ratio: auto !important;
+        height: auto !important;
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-box > div.aspect-video > div.flex-1 {
+        height: auto !important;
+        overflow: visible;
+    }
+
+    .project-box > div.aspect-video picture {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .project-box > div.aspect-video picture img {
+        width: 100%;
+        height: auto !important;
+        object-fit: contain;
+        object-position: center;
+        display: block;
+    }
 }
 
 footer {
