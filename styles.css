@@ -267,13 +267,13 @@ svg[data-lucide] {
 /* ========== NAVIGATION BAR ========== */
 
 #navbar {
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(107, 114, 128, 0.2);
+    background: #22c55e;
+    backdrop-filter: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 #navbar.scrolled {
-    background: rgba(0, 0, 0, 0.95);
+    background: #22c55e;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
