@@ -48,6 +48,13 @@ svg[data-lucide] {
     stroke-width: 2;
 }
 
+/* ========== MOBILE FONT SIZE REDUCTION (10%) ========== */
+@media (max-width: 768px) {
+    html {
+        font-size: 90%; /* Reduced by 10% for mobile only */
+    }
+}
+
 /* ========== GLOBAL ANIMATIONS ========== */
 
 @keyframes float {
